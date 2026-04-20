@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project 1 | AD Electrical & Solar Solution</title>
+  <meta name="description" content="Detailed view of Project 1 - Solar Installation by AD Electrical & Solar Solution.">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .project-detail-hero {
+      position: relative;
+      height: 60vh;
+      min-height: 400px;
+      background-image: url('assets/images/projects/project1/project1_1.jpg');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .project-detail-hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.6));
+    }
+    
+    .project-detail-hero .container {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      color: white;
+    }
+    
+    .project-detail-hero h1 {
+      font-size: 3.5rem;
+      margin-bottom: 1rem;
+      text-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    }
+    
+    .project-detail-hero p {
+      font-size: 1.25rem;
+      opacity: 0.9;
+    }
+    
+    .project-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    
+    .project-gallery img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 1rem;
+      box-shadow: var(--shadow-lg);
+      transition: transform 0.3s ease;
+    }
+    
+    .project-gallery img:hover {
+      transform: scale(1.02);
+    }
+    
+    .project-info-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      margin: 3rem 0;
+    }
+    
+    .project-info-item {
+      text-align: center;
+      padding: 2rem;
+      background: var(--light-gray);
+      border-radius: 1rem;
+    }
+    
+    .project-info-item i {
+      font-size: 2.5rem;
+      color: var(--primary-green);
+      margin-bottom: 1rem;
+    }
+    
+    .project-info-item h3 {
+      margin-bottom: 0.5rem;
+    }
+    
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 2rem;
+      color: var(--primary-green);
+      font-weight: 600;
+    }
+    
+    .back-btn:hover {
+      color: var(--dark-green);
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar scrolled">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">
+          <i class="fas fa-solar-panel"></i>
+        </div>
+        <span>AD Electrical & Solar</span>
+      </a>
+      
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      
+      <button class="mobile-menu-btn" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+  
+  <!-- Mobile Navigation -->
+  <div class="mobile-nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="projects.html" class="active">Projects</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <div class="overlay"></div>
+
+  <!-- Project Detail Hero -->
+  <section class="project-detail-hero" style="margin-top: 70px;">
+    <div class="container">
+      <h1>Project 1</h1>
+      <p>Residential Solar Installation</p>
+    </div>
+  </section>
+
+  <!-- Project Details Section -->
+  <section class="section section-white">
+    <div class="container">
+      <a href="projects.html" class="back-btn">
+        <i class="fas fa-arrow-left"></i> Back to Projects
+      </a>
+      
+      <div class="project-info-grid fade-in">
+        <div class="project-info-item">
+          <i class="fas fa-calendar"></i>
+          <h3>Completion Date</h3>
+          <p>January 2024</p>
+        </div>
+        <div class="project-info-item">
+          <i class="fas fa-bolt"></i>
+          <h3>System Capacity</h3>
+          <p>5 kW</p>
+        </div>
+        <div class="project-info-item">
+          <i class="fas fa-home"></i>
+          <h3>Project Type</h3>
+          <p>Residential</p>
+        </div>
+        <div class="project-info-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <h3>Location</h3>
+          <p>Dhaka, Bangladesh</p>
+        </div>
+      </div>
+      
+      <h2 class="section-title fade-in">Project Description</h2>
+      <div class="fade-in" style="max-width: 800px; margin: 0 auto 3rem;">
+        <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-light);">
+          This residential solar installation project involved the complete setup of a 5kW solar power system 
+          for a modern family home. The system includes high-efficiency solar panels, a reliable inverter, 
+          and battery backup solution. The installation was completed within 3 days, and the system now 
+          provides clean energy to power the entire household, significantly reducing electricity bills 
+          and carbon footprint.
+        </p>
+        <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-light); margin-top: 1rem;">
+          Our team handled everything from initial site assessment to final commissioning, ensuring 
+          optimal panel placement for maximum sun exposure. The client is now enjoying energy independence 
+          with a system designed to last over 25 years.
+        </p>
+      </div>
+      
+      <h2 class="section-title fade-in">Project Gallery</h2>
+      <div class="project-gallery fade-in">
+        <img src="assets/images/projects/project1/project1_1.jpg" alt="Project 1 - Main View">
+        <img src="assets/images/projects/project1/project1_1.jpg" alt="Project 1 - Detail View">
+        <img src="assets/images/projects/project1/project1_1.jpg" alt="Project 1 - Installation View">
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section" style="background: linear-gradient(135deg, var(--dark-green), var(--primary-green));">
+    <div class="container">
+      <div class="text-center" style="color: white;">
+        <h2 class="fade-in" style="color: white; margin-bottom: 1rem;">Want a Similar Project?</h2>
+        <p class="fade-in" style="color: rgba(255,255,255,0.9); font-size: 1.2rem; margin-bottom: 2rem;">Contact us today for a free consultation</p>
+        <a href="contact.html" class="btn btn-secondary fade-in">
+          <i class="fas fa-phone"></i> Get Free Quote
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- WhatsApp Float Button -->
+  <a href="https://wa.me/8801774331766" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>AD Electrical & Solar Solution</h3>
+          <p>Your trusted partner for complete solar solutions. We bring clean, renewable energy to homes and businesses with quality and care.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="services.html">Solar Installation</a></li>
+            <li><a href="services.html">Electrical Solutions</a></li>
+            <li><a href="services.html">Maintenance</a></li>
+            <li><a href="services.html">Consultation</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-contact">
+          <h4>Contact Info</h4>
+          <p><i class="fas fa-map-marker-alt"></i> 123 Solar Street, Green City, Dhaka</p>
+          <p><i class="fas fa-phone"></i> +880 1774-331766</p>
+          <p><i class="fas fa-envelope"></i> adelectricalsolutionbd@gmail.com</p>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; <span class="current-year"></span> AD Electrical & Solar Solution. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
