@@ -157,6 +157,15 @@ function initFormValidation() {
       e.preventDefault();
       
       if (validateForm(this)) {
+        // For contact page form with mailto fallback
+        const mailtoLink = this.getAttribute('data-mailto');
+        if (mailtoLink) {
+          const formData = new FormData(this);
+          const subject = encodeURIComponent(formData.get('subject') || 'Contact Form Submission');
+          const body = encodeURIComponent(`Name: ${formData.get('name')}\nEmail: ${formData.get('email')}\nPhone: ${formData.get('phone')}\n\nMessage:\n${formData.get('message')}`);
+          window.location.href = `${mailtoLink}?subject=${subject}&body=${body}`;
+        }
+        
         // Show success message
         const successMessage = this.querySelector('.success-message');
         if (successMessage) {
@@ -167,15 +176,6 @@ function initFormValidation() {
           setTimeout(() => {
             successMessage.classList.remove('show');
           }, 5000);
-        }
-        
-        // For contact page form with mailto fallback
-        const mailtoLink = this.getAttribute('data-mailto');
-        if (mailtoLink) {
-          const formData = new FormData(this);
-          const subject = 'Contact Form Submission';
-          const body = `Name: ${formData.get('name')}%0D%0AEmail: ${formData.get('email')}%0D%0APhone: ${formData.get('phone')}%0D%0AMessage: ${formData.get('message')}`;
-          window.location.href = `${mailtoLink}?subject=${subject}&body=${body}`;
         }
       }
     });
